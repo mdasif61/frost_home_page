@@ -1,19 +1,18 @@
+import Container from "../container";
 import SideBar from "../SideBar";
 
 const Home = () => {
-    return (
-        <div className="grid grid-cols-3">
-            <div className="col-span-1">
-            <SideBar/>
-            </div>
-            <div className="col-span-2">
-                main
-            </div>
-            <div className="col-span-1">
-                others
-            </div>
+  return (
+    <Container>
+      <div className="flex">
+        <div className="w-[240px] min-h-[1024px]">
+          <SideBar />
         </div>
-    );
+        <div>main</div>
+        <div>others</div>
+      </div>
+    </Container>
+  );
 };
 
 export default Home;

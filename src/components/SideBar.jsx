@@ -1,11 +1,11 @@
-import logo from '../assets/logo.png'
+import logo from "../assets/logo.png";
 
 const SideBar = () => {
-    return (
-        <div className='bg-black'>
-            <img src={logo} alt="logo"/>
-        </div>
-    );
+  return (
+    <div className="bg-gray-900 w-full h-full">
+      <img src={logo} alt="logo" />
+    </div>
+  );
 };
 
 export default SideBar;
