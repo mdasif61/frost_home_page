@@ -9,7 +9,7 @@ const Main = () => {
                 <div className="w-[240px] min-h-[1024px]">
                     <SideBar></SideBar>
                 </div>
-                <div className="w-[816px] bg-slate-500">
+                <div className="w-[816px] min-h-[1024px] bg-black">
                     <Outlet></Outlet>
                 </div>
                 <div>

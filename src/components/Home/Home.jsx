@@ -1,11 +1,10 @@
-import Container from "../container";
-import SideBar from "../SideBar";
+import SearchBar from "../SearchBar";
 
 const Home = () => {
   return (
-    <Container>
-      
-    </Container>
+    <div className="w-full h-full">
+      <SearchBar/>
+    </div>
   );
 };
 

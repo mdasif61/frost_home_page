@@ -4,8 +4,8 @@ import { ArrowDownToLine, House, LayoutDashboard, LibraryBig, Users } from "luci
 
 const SideBar = () => {
   return (
-    <div className="bg-gray-900 w-full h-full">
-      <img src={logo} alt="logo" />
+    <div className="bg-black w-full h-full">
+      <img className="w-full px-6 pt-10 pb-14" src={logo} alt="logo" />
       <div>
         <ul className="space-y-2 ">
           <li><NavLink to='/' className={({isActive})=>isActive?"bg-[#ED5B4E] items-center flex py-3 px-4 rounded-xl text-white text-sm":"flex text-white items-center text-sm py-3 px-4"}><House className="mr-3"/> Home</NavLink></li>
