@@ -1,6 +1,8 @@
+import Container from "@/allComponent/Container";
+import SideBar from "@/allComponent/SideBar";
 import { Outlet } from "react-router-dom";
-import SideBar from "../components/SideBar";
-import Container from "../components/container";
+// import SideBar from "../components/SideBar";
+// import Container from "../components/container";
 
 const Main = () => {
   return (

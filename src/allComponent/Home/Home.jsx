@@ -1,6 +1,6 @@
-import Banner from "../Banner";
-import SearchBar from "../SearchBar";
-import Suggestions from "../Suggestions";
+import Banner from "../../allComponent/Banner";
+import SearchBar from "../../allComponent/SearchBar";
+import Suggestions from "../../allComponent/Suggestions";
 
 const Home = () => {
   return (

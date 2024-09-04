@@ -1,45 +1,45 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Main from './Layout/Main'
-import Home from './components/Home/Home'
-import Library from './components/sideBarComponents/Library'
-import Categories from './components/sideBarComponents/Categories'
-import Download from './components/sideBarComponents/Download'
-import Community from './components/sideBarComponents/Community'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Main from "./Layout/Main";
+import Home from "./allComponent/Home/Home";
+import Library from "./allComponent/sideBarComponents/Library";
+import Categories from "./allComponent/sideBarComponents/Categories";
+import Download from "./allComponent/sideBarComponents/Download";
+import Community from "./allComponent/sideBarComponents/Community";
 
-const router=createBrowserRouter([
+const router = createBrowserRouter([
   {
-    path:'/',
-    element:<Main/>,
-    children:[
+    path: "/",
+    element: <Main />,
+    children: [
       {
-        path:'/',
-        element:<Home/>
+        path: "/",
+        element: <Home />,
       },
       {
-        path:'/library',
-        element:<Library/>
+        path: "/library",
+        element: <Library />,
       },
       {
-        path:'/categories',
-        element:<Categories/>
+        path: "/categories",
+        element: <Categories />,
       },
       {
-        path:'/download',
-        element:<Download/>
+        path: "/download",
+        element: <Download />,
       },
       {
-        path:'/community',
-        element:<Community/>
-      }
-    ]
-  }
-])
+        path: "/community",
+        element: <Community />,
+      },
+    ],
+  },
+]);
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router}></RouterProvider>
-  </StrictMode>,
-)
+  </StrictMode>
+);
