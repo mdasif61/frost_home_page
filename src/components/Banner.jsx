@@ -3,8 +3,15 @@ import shotterMan from "../assets/man.png";
 const Banner = () => {
   return (
     <div className="bg-gradient-to-b h-[351.35px] relative rounded-xl px-4 py-6 from-[#282A37] to-[#161A19] flex">
+
       {/* feather circle start */}
-      {/* <div className="w-24 h-24 absolute bg-[#ED5B4E] rounded-full"></div> */}
+      <div className="overflow-clip h-full w-full absolute left-0 top-0 rounded-xl">
+        <div className="w-36 h-36 absolute -right-32 -top-16 blur-3xl bg-[#ED5B4E] rounded-full"></div>
+
+        <div className="w-36 h-36 absolute -left-8 -top-20 blur-3xl bg-[#ED5B4E] rounded-full"></div>
+
+        <div className="w-36 h-36 absolute -left-8 -bottom-24 blur-3xl bg-[#ED5B4E] rounded-full"></div>
+      </div>
       {/* featehr circle end */}
 
       <div className="w-1/2 flex flex-col justify-between">
