@@ -21,7 +21,7 @@ export function CardCarousel() {
     <Carousel className="w-full">
       <CarouselContent className="-ml-1">
         {carouselImages.map(({ img, text, time }, index) => (
-          <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
+          <CarouselItem key={index} className="pl-1 flex justify-center md:basis-1/2 lg:basis-1/3">
             <div className="p-1 w-[229px]">
               <Card>
                 <CardContent className="flex h-[151px] items-center justify-center">
@@ -32,10 +32,10 @@ export function CardCarousel() {
                   />
                 </CardContent>
               </Card>
+              <div className="flex items-center w-full my-2 justify-between">
+              <h1 className="font-semibold text-white text-lg">{text}</h1>
+              <p className="text-gray-500 text-sm">{time}</p>
             </div>
-            <div className="flex items-center w-full justify-between">
-              <h1 className="font-bold text-white">{text}</h1>
-              <p className="text-gray-500">{time}</p>
             </div>
           </CarouselItem>
         ))}
