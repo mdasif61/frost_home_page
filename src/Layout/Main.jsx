@@ -1,3 +1,4 @@
+import AsideItem from "@/allComponent/AsideItem";
 import Container from "@/allComponent/Container";
 import SideBar from "@/allComponent/SideBar";
 import { Outlet } from "react-router-dom";
@@ -14,7 +15,9 @@ const Main = () => {
         <div className="w-[816px] ml-[260px] min-h-[1024px] bg-black">
           <Outlet></Outlet>
         </div>
-        <div>Others</div>
+        <div className="w-[312px] px-6 flex-1">
+          <AsideItem></AsideItem>
+        </div>
       </div>
     </Container>
   );
