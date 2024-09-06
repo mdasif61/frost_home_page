@@ -1,6 +1,7 @@
 import notification from "../assets/notification.svg";
 import bag from "../assets/Vbag.svg";
 import topIcon from "../assets/topIcon.png";
+import FriendsOnline from "./FriendsOnline";
 
 const AsideItem = () => {
   return (
@@ -32,6 +33,11 @@ const AsideItem = () => {
         </div>
         <h1 className="text-[#ED5B4E] font-semibold">59%</h1>
       </div>
+
+      <div>
+          <FriendsOnline></FriendsOnline>
+      </div>
+
     </div>
   );
 };
