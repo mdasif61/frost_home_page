@@ -1,0 +1,17 @@
+/* .customScrollbar{
+    scrollbar-width: 5px;
+    scrollbar-color: red;
+} */
+
+.customScrollbar::-webkit-scrollbar{
+    width: 4px;
+    max-height: 50%;
+    height: 50%;
+}
+
+.customScrollbar::-webkit-scrollbar-track{
+    background: #6A6A6A;
+}
+.customScrollbar::-webkit-scrollbar-thumb{
+    background: #ED5B4E;
+}

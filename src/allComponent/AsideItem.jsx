@@ -2,6 +2,7 @@ import notification from "../assets/notification.svg";
 import bag from "../assets/Vbag.svg";
 import topIcon from "../assets/topIcon.png";
 import FriendsOnline from "./FriendsOnline";
+import Community from "./Community";
 
 const AsideItem = () => {
   return (
@@ -36,6 +37,7 @@ const AsideItem = () => {
 
       <div>
           <FriendsOnline></FriendsOnline>
+          <Community></Community>
       </div>
 
     </div>
