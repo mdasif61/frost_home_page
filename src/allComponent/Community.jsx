@@ -10,12 +10,12 @@ const communitys = [
 
 const Community = () => {
     return (
-        <div className="bg-gradient-to-b from-[#282A37] to-[#161A19] h-[279px] w-full rounded-2xl my-6 px-6 pt-6 flex flex-col">
-            <div className='flex items-center justify-between'>
+        <div className="bg-gradient-to-b from-[#282A37] to-[#161A19] h-[279px] w-full rounded-2xl pr-6 pt-6 flex flex-col">
+            <div className='flex items-center px-6 justify-between'>
                 <h1 className="text-[16px] text-white font-medium">Community’s</h1>
                 <h1 className="text-white">All</h1>
             </div>
-            <div className='space-y-2 mt-6 w-full overflow-y-scroll customScrollbar'>
+            <div className='space-y-4 pl-6 pt-6 w-full overflow-y-scroll customScrollbar'>
                 {
                     communitys.map(({ id, img, name, title, quantity }) => (
                         <div className='flex items-center relative'>
