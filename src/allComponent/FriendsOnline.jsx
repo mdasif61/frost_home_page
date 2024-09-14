@@ -25,7 +25,7 @@ const FriendsOnline = () => {
             <div className='space-y-4 mt-6 customScrollbar overflow-y-scroll'>
                 {
                     friendOnline.map(({ id, img, name, title }) => (
-                        <div className='flex items-center'>
+                        <div key={id} className='flex items-center'>
                             <div>
                                 <img src={img} alt="" />
                             </div>

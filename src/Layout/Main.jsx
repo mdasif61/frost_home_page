@@ -9,9 +9,9 @@ import { Outlet } from "react-router-dom";
 const Main = () => {
   return (
     <Container>
-      <HeaderNav/>
+      <HeaderNav />
       <div className="flex font-rubik">
-        <div className="w-[240px] h-screen fixed">
+        <div className="h-screen flex w-[240px] fixed top-0 left-0">
           <SideBar></SideBar>
         </div>
         <div className="w-[816px] ml-[260px] min-h-[1024px] bg-black">
