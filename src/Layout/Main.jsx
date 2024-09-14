@@ -1,6 +1,7 @@
 import AsideItem from "@/allComponent/AsideItem";
 import Container from "@/allComponent/Container";
 import SideBar from "@/allComponent/SideBar";
+import HeaderNav from "@/allComponent/shared/HeaderNav";
 import { Outlet } from "react-router-dom";
 // import SideBar from "../components/SideBar";
 // import Container from "../components/container";
@@ -8,16 +9,17 @@ import { Outlet } from "react-router-dom";
 const Main = () => {
   return (
     <Container>
+      <HeaderNav />
       <div className="flex font-rubik">
-        <div className="w-[240px] min-h-[1024px] fixed">
+        <div className={`h-screen hidden md:flex md:w-[200px] md:fixed sticky top-0 left-0`}>
           <SideBar></SideBar>
         </div>
-        <div className="w-[816px] ml-[260px] min-h-[1024px] bg-black">
+        <div className="flex-1 md:ml-[224px] min-h-screen bg-black">
           <Outlet></Outlet>
         </div>
-        <div className="w-[312px] px-6 flex-1">
+        {/* <div className="px-6 min-w-[312px] min-h-screen">
           <AsideItem></AsideItem>
-        </div>
+        </div> */}
       </div>
     </Container>
   );

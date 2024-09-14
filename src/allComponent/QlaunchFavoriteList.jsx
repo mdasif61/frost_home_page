@@ -22,8 +22,8 @@ const QuickLaunch = [
 
 const QlaunchFavoriteList = () => {
   return (
-    <div className="flex justify-between mt-3">
-      <div className="w-[283px] h-[279px] bg-gradient-to-b from-[#282A37] to-[#161A19] pt-6 px-4 rounded-2xl">
+    <div className="lg:grid items-center md:flex flex-col md:space-y-0 space-y-4 grid-cols-8 md:gap-6 justify-between mt-3">
+      <div className="col-span-3 h-auto bg-gradient-to-b from-[#282A37] to-[#161A19] py-6 px-4 md:rounded-2xl">
         <h1 className="text-white mb-5">Quick Launch</h1>
         <div className="space-y-3">
           {QuickLaunch.map(({ id, img, text }) => (
@@ -37,7 +37,7 @@ const QlaunchFavoriteList = () => {
         </div>
       </div>
 
-      <div className="w-[509px] h-[279px] bg-gradient-to-b from-[#282A37] to-[#161A19] pt-6 px-6 rounded-2xl">
+      <div className="col-span-5 h-auto bg-gradient-to-b from-[#282A37] to-[#161A19] mt-0 py-6 px-6 md:rounded-2xl">
         <div className="flex items-center mb-5 justify-between">
           <h1 className="text-white">Favorite List</h1>
           <h1 className="text-white">All</h1>

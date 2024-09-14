@@ -6,7 +6,7 @@ import QlaunchFavoriteList from "../QlaunchFavoriteList";
 const Home = () => {
   return (
     <div className="w-full h-full">
-      <SearchBar/>
+      {/* <SearchBar/> */}
       <Banner/>
       <Suggestions/>
       <QlaunchFavoriteList/>
