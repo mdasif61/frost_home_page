@@ -32,8 +32,8 @@ export function CardCarousel() {
                   />
                 </CardContent>
               </Card>
-              <div className="flex items-center w-full my-2 justify-between">
-              <h1 className="font-semibold text-white text-lg">{text}</h1>
+              <div className="flex items-center w-full mt-2 justify-between">
+              <h1 className="font-semibold text-white text-[16px]">{text}</h1>
               <p className="text-gray-500 text-sm">{time}</p>
             </div>
             </div>

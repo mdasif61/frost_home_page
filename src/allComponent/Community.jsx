@@ -10,7 +10,7 @@ const communitys = [
 
 const Community = () => {
     return (
-        <div className="bg-gradient-to-b from-[#282A37] to-[#161A19] h-[279px] w-full rounded-2xl pr-6 pt-6 flex flex-col">
+        <div className="bg-gradient-to-b from-[#282A37] to-[#161A19] h-[279px] w-full rounded-2xl pr-6 mt-6 pt-6 flex flex-col">
             <div className='flex items-center px-6 justify-between'>
                 <h1 className="text-[16px] text-white font-medium">Community’s</h1>
                 <h1 className="text-white">All</h1>
@@ -18,7 +18,7 @@ const Community = () => {
             <div className='space-y-4 pl-6 pt-6 w-full overflow-y-scroll customScrollbar'>
                 {
                     communitys.map(({ id, img, name, title, quantity }) => (
-                        <div className='flex items-center relative'>
+                        <div key={id} className='flex items-center relative'>
                             <div className='z-50'>
                                 <div className='absolute w-7 h-7 rounded-full bg-[#ED5B4E] -left-3 flex items-center justify-center -top-3'>
                                     <h1 className='text-white'>{quantity}</h1>
