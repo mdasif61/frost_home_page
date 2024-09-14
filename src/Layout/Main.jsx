@@ -1,5 +1,6 @@
 import AsideItem from "@/allComponent/AsideItem";
 import Container from "@/allComponent/Container";
+import HeaderNav from "@/allComponent/shared/HeaderNav";
 import SideBar from "@/allComponent/SideBar";
 import { Outlet } from "react-router-dom";
 // import SideBar from "../components/SideBar";
@@ -8,8 +9,9 @@ import { Outlet } from "react-router-dom";
 const Main = () => {
   return (
     <Container>
+      <HeaderNav/>
       <div className="flex font-rubik">
-        <div className="w-[240px] min-h-[1024px] fixed">
+        <div className="w-[240px] h-screen fixed">
           <SideBar></SideBar>
         </div>
         <div className="w-[816px] ml-[260px] min-h-[1024px] bg-black">
