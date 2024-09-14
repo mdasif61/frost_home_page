@@ -5,9 +5,9 @@ import topIcon from "../../assets/topIcon.png";
 
 const HeaderNav = () => {
     return (
-        <div className='w-full flex pl-[240px] px-6 items-center justify-between'>
+        <div className='w-full flex py-6 pl-[260px] px-6 items-center justify-between'>
             <SearchBar></SearchBar>
-            <div className='bg-white'>
+            <div>
                 <div className="flex items-center justify-end md:space-x-4 space-x-1 w-full">
                     <div className="text-white relative shrink-0 flex items-center justify-center md:w-[57px] md:h-[57px] h-9 w-9 rounded-md md:rounded-2xl p-1 bg-gradient-to-b from-[#282A37] to-[#161A19]">
                         <button>
