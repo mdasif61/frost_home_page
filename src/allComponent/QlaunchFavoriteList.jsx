@@ -22,7 +22,7 @@ const QuickLaunch = [
 
 const QlaunchFavoriteList = () => {
   return (
-    <div className="flex justify-between mt-6">
+    <div className="flex justify-between mt-5">
       <div className="w-[283px] h-[279px] bg-gradient-to-b from-[#282A37] to-[#161A19] pt-6 px-4 rounded-2xl">
         <h1 className="text-white mb-5">Quick Launch</h1>
         <div className="space-y-3">
