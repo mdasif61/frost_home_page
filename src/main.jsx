@@ -4,10 +4,11 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./Layout/Main";
 import Home from "./allComponent/Home/Home";
-import Library from "./allComponent/sideBarComponents/Library";
+// import Library from "./allComponent/sideBarComponents/Library";
 import Categories from "./allComponent/sideBarComponents/Categories";
 import Download from "./allComponent/sideBarComponents/Download";
 import Community from "./allComponent/sideBarComponents/Community";
+import Library from "./allComponent/library/Library";
 
 const router = createBrowserRouter([
   {
