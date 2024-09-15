@@ -1,4 +1,4 @@
-import { CardCarousel } from "@/components/cnCompo/CardCarousel";
+import { CardCarousel } from "@/reuseable/CardCarousel";
 import carouselImg01 from "../assets/carouselImg 01.jpg";
 import carouselImg02 from "../assets/carouselImg 02.jpg";
 import carouselImg03 from "../assets/carouselImg 03.jpg";
