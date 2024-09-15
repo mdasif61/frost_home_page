@@ -6,17 +6,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import carouselImg01 from "../../assets/carouselImg 01.jpg";
-import carouselImg02 from "../../assets/carouselImg 02.jpg";
-import carouselImg03 from "../../assets/carouselImg 03.jpg";
 
-const carouselImages = [
-  { img: carouselImg01, text: "Rocket League", time: "9Hrs" },
-  { img: carouselImg02, text: "Call Of Duty Mw3", time: "9Hrs" },
-  { img: carouselImg03, text: "Cyberpunk", time: "9Hrs" },
-];
-
-export function CardCarousel() {
+export function CardCarousel({carouselImages}) {
   return (
     <Carousel className="w-full">
       <CarouselContent className="-ml-1">

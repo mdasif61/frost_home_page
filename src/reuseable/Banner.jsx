@@ -1,6 +1,6 @@
-import shotterMan from "../assets/man.png";
+import Button from "./Button";
 
-const Banner = () => {
+const Banner = ({heading,btnText,price,purchaseBtn,addToCart,img}) => {
   return (
     <div className="bg-gradient-to-b h-[351.35px] relative rounded-xl px-4 py-6 from-[#282A37] to-[#161A19] flex">
 
@@ -15,30 +15,26 @@ const Banner = () => {
       {/* featehr circle end */}
 
       <div className="w-1/2 flex flex-col justify-between">
-        <button className="bg-[#ED5B4E] w-14 h-8 rounded-lg text-white font-semibold">
-          New
-        </button>
+        <Button>{btnText}</Button>
         <div>
           <h1 className="text-white font-bold text-4xl">
-            Red Dead
-            <br />
-            Redemption
+            {heading}
           </h1>
         </div>
         <div>
-          <p className="text-[#ED5B4E] text-2xl mb-3">$69.99</p>
+          <p className="text-[#ED5B4E] text-2xl mb-3">${price}</p>
           <div className="w-64 h-20 bg-[#FFFFFF0D] rounded-lg px-4 py-2 flex items-center justify-between">
             <button className="bg-[#ED5B4E] w-[122px] h-[59px] text-lg rounded-xl text-white font-semibold">
-              Purchase
+              {purchaseBtn}
             </button>
             <span className="text-[#ED5B4E] text-[16px] font-semibold">
-              Add To Cart
+              {addToCart}
             </span>
           </div>
         </div>
       </div>
       <div className="w-1/2 z-50 relative">
-        <img className="absolute -bottom-6" src={shotterMan} alt="shotterMan" />
+        <img className="absolute -bottom-6" src={img} alt="shotterMan" />
       </div>
     </div>
   );

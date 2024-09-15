@@ -1,4 +1,13 @@
-import { CardCarousel } from "@/components/cnCompo/CardCarousel";
+import { CardCarousel } from "@/reuseable/CardCarousel";
+import carouselImg01 from "../assets/carouselImg 01.jpg";
+import carouselImg02 from "../assets/carouselImg 02.jpg";
+import carouselImg03 from "../assets/carouselImg 03.jpg";
+
+const carouselImages = [
+  { img: carouselImg01, text: "Rocket League", time: "9Hrs" },
+  { img: carouselImg02, text: "Call Of Duty Mw3", time: "9Hrs" },
+  { img: carouselImg03, text: "Cyberpunk", time: "9Hrs" },
+];
 
 const Suggestions = () => {
   return (
@@ -9,7 +18,9 @@ const Suggestions = () => {
       </div>
       <div className="mt-2 w-full px-8">
         <div className="w-full">
-          <CardCarousel></CardCarousel>
+          <CardCarousel
+            carouselImages={carouselImages}
+          ></CardCarousel>
         </div>
       </div>
     </div>
