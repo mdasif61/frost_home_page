@@ -37,7 +37,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="w-1/2 relative">
+      <div className="w-1/2 z-50 relative">
         <img className="absolute -bottom-6" src={shotterMan} alt="shotterMan" />
       </div>
     </div>

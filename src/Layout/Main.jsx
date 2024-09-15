@@ -11,7 +11,7 @@ const Main = () => {
     <Container>
       <HeaderNav />
       <div className="flex font-rubik">
-        <div className="h-screen flex w-[240px] fixed top-0 left-0">
+        <div className="h-screen z-50 flex w-[240px] fixed top-0 left-0">
           <SideBar></SideBar>
         </div>
         <div className="w-[816px] ml-[260px] min-h-[1024px] bg-black">

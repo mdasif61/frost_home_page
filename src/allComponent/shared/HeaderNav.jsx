@@ -5,7 +5,7 @@ import topIcon from "../../assets/topIcon.png";
 
 const HeaderNav = () => {
     return (
-        <div className='w-full flex py-6 pl-[260px] px-6 items-center justify-between'>
+        <div className='w-full sticky top-0 z-50 bg-black backdrop-blur-xl bg-opacity-50 flex py-6 pl-[260px] px-6 items-center justify-between'>
             <SearchBar></SearchBar>
             <div>
                 <div className="flex items-center justify-end md:space-x-4 space-x-1 w-full">
