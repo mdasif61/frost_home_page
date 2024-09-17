@@ -23,7 +23,7 @@ export function CardCarousel({ carouselImages, except }) {
                   />
                 </CardContent>
               </Card>
-              <div className={`flex items-center ${except && "bg-gradient-to-b from-[#282A37] to-[#161A19] justify-center px-2 h-[51px] rounded-2xl py-4 mt-0 w-auto"} w-full mt-2`}>
+              <div className={`flex items-center ${except ? "bg-gradient-to-b from-[#282A37] to-[#161A19] justify-center px-2 h-[51px] rounded-2xl py-4 mt-0 w-auto":"justify-between"} w-full mt-2`}>
                 <h1 className="font-semibold text-white text-[16px]">{text}</h1>
                 <p className={`text-gray-500 text-sm ${except && "hidden"}`}>{time}</p>
               </div>

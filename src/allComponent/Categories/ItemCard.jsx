@@ -10,6 +10,9 @@ const cardInfo=[
     {id:"4",title:"Rocket League", desc:"Lorem ipsum dolor sit amet consectetur. Parturient interdum cras volutpat porta aliquet nec pulvinar sit diam. Suspendisse sodales id sed tortor eu.", ratings:4.5, img:card1},
     {id:"5",title:"Child Of Light", desc:"Lorem ipsum dolor sit amet consectetur. Parturient interdum cras volutpat porta aliquet nec pulvinar sit diam. Suspendisse sodales id sed tortor eu.", ratings:4.5, img:card2},
     {id:"6",title:"You", desc:"Lorem ipsum dolor sit amet consectetur. Parturient interdum cras volutpat porta aliquet nec pulvinar sit diam. Suspendisse sodales id sed tortor eu.", ratings:4.5, img:card3},
+    {id:"4",title:"Rocket League", desc:"Lorem ipsum dolor sit amet consectetur. Parturient interdum cras volutpat porta aliquet nec pulvinar sit diam. Suspendisse sodales id sed tortor eu.", ratings:4.5, img:card1},
+    {id:"5",title:"Child Of Light", desc:"Lorem ipsum dolor sit amet consectetur. Parturient interdum cras volutpat porta aliquet nec pulvinar sit diam. Suspendisse sodales id sed tortor eu.", ratings:4.5, img:card2},
+    {id:"6",title:"You", desc:"Lorem ipsum dolor sit amet consectetur. Parturient interdum cras volutpat porta aliquet nec pulvinar sit diam. Suspendisse sodales id sed tortor eu.", ratings:4.5, img:card3},
 ]
 
 const ItemCard = () => {
