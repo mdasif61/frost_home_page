@@ -124,7 +124,7 @@ Carousel.displayName = "Carousel";
 
 const CarouselContent = React.forwardRef(({ className, ...props }, ref) => {
   const { carouselRef, orientation } = useCarousel();
-
+  const {except}=props;
   return (
     <div ref={carouselRef} className="overflow-hidden">
       <div

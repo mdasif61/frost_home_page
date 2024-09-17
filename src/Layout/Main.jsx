@@ -2,11 +2,12 @@ import AsideItem from "@/allComponent/AsideItem";
 import Container from "@/allComponent/Container";
 import HeaderNav from "@/allComponent/shared/HeaderNav";
 import SideBar from "@/allComponent/SideBar";
-import { Outlet } from "react-router-dom";
-// import SideBar from "../components/SideBar";
-// import Container from "../components/container";
+import { Outlet, useLocation } from "react-router-dom";
 
 const Main = () => {
+
+  const {pathname}=useLocation();
+
   return (
     <Container>
       <HeaderNav />
@@ -14,10 +15,10 @@ const Main = () => {
         <div className="h-screen z-50 flex w-[240px] fixed top-0 left-0">
           <SideBar></SideBar>
         </div>
-        <div className="w-[816px] ml-[260px] min-h-[1024px] bg-black">
+        <div className={`w-[816px] ml-[260px] min-h-[1024px] bg-black ${pathname==="/categories"?"w-full pr-6":"w-[816px]"}`}>
           <Outlet></Outlet>
         </div>
-        <div className="w-[312px] px-6 flex-1">
+        <div className={`w-[312px] px-6 flex-1 ${pathname==="/categories"&&"hidden"}`}>
           <AsideItem></AsideItem>
         </div>
       </div>
