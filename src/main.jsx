@@ -4,10 +4,10 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./Layout/Main";
 import Home from "./allComponent/Home/Home";
-import Download from "./allComponent/sideBarComponents/Download";
 import Community from "./allComponent/sideBarComponents/Community";
 import Library from "./allComponent/library/Library";
 import Categories from "./allComponent/Categories/Categories";
+import Download from "./allComponent/Download/download";
 
 const router = createBrowserRouter([
   {
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/download",
-        element: <Download />,
+        element:<Download/>
       },
       {
         path: "/community",
