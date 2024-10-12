@@ -1,4 +1,5 @@
 import Chart from "@/reuseable/Chart";
+import DownloadingProcess from "./DownloadingProcess";
 
 const Download = () => {
   return (
@@ -26,6 +27,11 @@ const Download = () => {
           </div>
         </div>
       </div>
+
+      <div>
+        <DownloadingProcess/>
+      </div>
+
     </div>
   );
 };
