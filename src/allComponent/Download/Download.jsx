@@ -28,7 +28,7 @@ const Download = () => {
         </div>
       </div>
 
-      <div>
+      <div className="w-full my-6">
         <DownloadingProcess/>
       </div>
 
