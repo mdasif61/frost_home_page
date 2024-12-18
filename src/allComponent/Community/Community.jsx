@@ -106,7 +106,7 @@ const Community = () => {
                 <Ellipsis />
               </button>
             </div>
-            <div>
+            <div className="mt-4">
               <h1 className="text-white font-medium text-[29px]">
                 {item.title}
               </h1>
