@@ -4,10 +4,10 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./Layout/Main";
 import Home from "./allComponent/Home/Home";
-import Community from "./allComponent/sideBarComponents/Community";
 import Library from "./allComponent/library/Library";
 import Categories from "./allComponent/Categories/Categories";
 import Download from "./allComponent/Download/download";
+import Community from "./allComponent/Community/Community";
 
 const router = createBrowserRouter([
   {
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/community",
-        element: <Community />,
+        element:<Community/>,
       },
     ],
   },
